@@ -1,34 +1,18 @@
-import bs4 as bs
+# import bs4 as bs
+# import urllib.request
+
+# sauce = urllib.request.urlopen('http://www.fightmetric.com/fighter-details/fd55393021a8c255').read()
+# soup = bs.BeautifulSoup(sauce, 'lxml')
+# # tables = soup.find_all('li')
+# link_soup = ('<li class="b-list__box-list-item b-list__box-list-item_type_block">')
+# link_soup.find_all("li, class_=b-list__box-list-item b-list__box-list-item_type_block")
+# print(link_soup)
+
+
+
+from bs4 import BeautifulSoup
 import urllib.request
 
-sauce = urllib.request.urlopen('http://www.tdcj.state.tx.us/death_row/dr_scheduled_executions.html').read()
-soup = bs.BeautifulSoup(sauce, 'lxml')
-print(soup.prettify())
-
-
-# for link in soup.find_all('a'):
-# 	print(link.get('href'))
-
-
-# print(soup.prettify())
-
-
-# html_doc = """
-# <html><head><title>The Dormouse's story</title></head>
-# <body>
-# <p class="title"><b>The Dormouse's story</b></p>
-
-# <p class="story">Once upon a time there were three little sisters; and their names were
-# <a href="http://example.com/elsie" class="sister" id="link1">Elsie</a>,
-# <a href="http://example.com/lacie" class="sister" id="link2">Lacie</a> and
-# <a href="http://example.com/tillie" class="sister" id="link3">Tillie</a>;
-# and they lived at the bottom of a well.</p>
-
-# <p class="story">...</p>
-# """
-
-
-# from bs4 import BeautifulSoup
-# soup = BeautifulSoup(html_doc, 'html.parser')
-
-# print(soup.title)
+source = urliib.request.urlopen('http://www.fightmetric.com/fighter-details/fd55393021a8c255').read()
+soup = BeautifulSoup(aource, 'lxml')
+print(source)
